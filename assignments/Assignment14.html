@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14: Nested and Responsive Tables</title>
+  <style>
+    /* Container that makes the wide table scroll horizontally on small screens */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      padding: 15px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Outer table styling */
+    .outer-table {
+      width: 100%;
+      min-width: 500px; /* Ensures scrolling triggers on narrow viewports */
+      border-collapse: collapse;
+      font-family: Georgia, serif;
+      text-align: left;
+    }
+
+    .outer-table th,
+    .outer-table td {
+      border: 1px solid #999;
+      padding: 10px 14px;
+      vertical-align: middle;
+    }
+
+    .outer-table th {
+      color: #555;
+      font-weight: bold;
+    }
+
+    /* Nested inner table styling */
+    .inner-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .inner-table th,
+    .inner-table td {
+      border: 1px solid #999;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-container">
+    <table class="outer-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lab Batches</th>
+          <th>Faculty</th>
+          <th>Room</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Friday</td>
+          <td>
+            <!-- Nested Table inside the "Lab Batches" cell -->
+            <table class="inner-table">
+              <thead>
+                <tr>
+                  <th>Batch</th>
+                  <th>System</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A1</td>
+                  <td>PC 1-20</td>
+                </tr>
+                <tr>
+                  <td>A2</td>
+                  <td>PC 21-40</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>Dr. Sharma</td>
+          <td>Lab 2</td>
+          <td>2-4 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

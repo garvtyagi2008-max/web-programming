@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Admission 2026</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #1e56a0;
+            color: #ffffff;
+            text-align: center;
+            padding: 22px 15px;
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        main {
+            padding: 25px 35px;
+        }
+
+        h2 {
+            color: #1f2937;
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        caption {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+
+        th, td {
+            border: 1px solid #9ca3af;
+            padding: 10px 12px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #e5e7eb;
+            color: #111827;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        td:nth-child(2) {
+            text-align: center;
+        }
+
+        /* Form Styling */
+        fieldset {
+            border: 1px solid #9ca3af;
+            padding: 18px 20px;
+        }
+
+        legend {
+            padding: 0 6px;
+            font-size: 0.95rem;
+            color: #374151;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.95rem;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            max-width: 260px;
+            padding: 6px 8px;
+            border: 1px solid #6b7280;
+            border-radius: 3px;
+            font-size: 0.95rem;
+        }
+
+        select {
+            width: auto;
+            min-width: 140px;
+            background-color: #f3f4f6;
+        }
+
+        textarea {
+            max-width: 480px;
+            height: 85px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 6px 16px;
+            background-color: #e5e7eb;
+            border: 1px solid #6b7280;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d1d5db;
+        }
+
+        footer {
+            background-color: #1e56a0;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ABC College Admission 2026</h1>
+        </header>
+
+        <main>
+            <section aria-labelledby="courses-heading">
+                <h2 id="courses-heading">Courses and Fees</h2>
+                <table>
+                    <caption>Available Courses</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Course</th>
+                            <th scope="col">Seats</th>
+                            <th scope="col">Fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.Tech CSE</td>
+                            <td>120</td>
+                            <td>&#8377;90,000</td>
+                        </tr>
+                        <tr>
+                            <td>BCA</td>
+                            <td>60</td>
+                            <td>&#8377;45,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section aria-label="Student Application Form">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Application Form</legend>
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required minlength="2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Course:</label>
+                            <select id="course" name="course" required>
+                                <option value="B.Tech CSE" selected>B.Tech CSE</option>
+                                <option value="BCA">BCA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="statement">Statement:</label>
+                            <textarea id="statement" name="statement" required minlength="10"></textarea>
+                        </div>
+
+                        <button type="submit">Apply</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 ABC College</p>
+        </footer>
+    </div>
+
+</body>
+</html>
